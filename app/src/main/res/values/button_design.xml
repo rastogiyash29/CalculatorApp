@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_normal" parent="android:Theme">
+        <item name="android:background">@drawable/button_normal</item>
+    </style>
+
+    <style name="button_special" parent="android:Theme">
+
+    </style>
+
+</resources>

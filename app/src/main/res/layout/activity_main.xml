@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonsBack"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/screenBack"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="bottom|end"
+        android:padding="20dp"
+        android:text="123456789"
+        android:textColor="@color/white"
+        android:textSize="50sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ac"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:backgroundTint="#E10B54"
+            android:fontFamily="sans-serif"
+            android:onClick="onClear"
+            android:padding="5dp"
+            android:text="AC"
+            android:textColor="@color/button_font"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:backgroundTint="#CB0C26"
+            android:fontFamily="sans-serif"
+            android:onClick="onDel"
+            android:padding="10dp"
+            android:text="⌫"
+            android:textColor="@color/button_font"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="%"
+            android:onClick="onOperator"
+            android:textColor="@color/button_font"
+            android:textSize="27sp" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_spl"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="÷"
+            android:onClick="onOperator"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dig7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="7"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/dig8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="8"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/dig9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="9"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/mult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_spl"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="×"
+            android:onClick="onOperator"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dig4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:text="4"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/dig5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="5"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/dig6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="6"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_spl"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="-"
+            android:onClick="onOperator"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dig1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="1"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/dig2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="2"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/dig3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="3"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_spl"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="+"
+            android:onClick="onOperator"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:backgroundTint="#17A7BA"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="ANS"
+            android:onClick="ans"
+            android:textColor="@color/button_font"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/dig0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="@color/button_font"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/point"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="."
+            android:textColor="@color/button_font"
+            android:onClick="onDot"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="="
+            android:onClick="equals"
+            android:textColor="@color/buttonsBack"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
